@@ -1,0 +1,268 @@
+/* Global Styles */
+body {
+    background-color: #ffffff; /* Thay đổi màu nền sang trắng */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container-fluid {
+    overflow: hidden; /* Đảm bảo không có overflow */
+    max-height: 150vh !important;
+}
+
+
+.sidebar {
+    width: 300px; /* Giảm kích thước để sidebar gọn gàng hơn */
+    background-color: #2c3e50; /* Nền màu tối, giúp các yếu tố nổi bật hơn */
+    color: #ecf0f1; /* Màu chữ sáng hơn trên nền tối */
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ để nổi bật */
+    border-radius: 0 15px 15px 0; /* Bo góc sidebar */
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar a {
+    color: #ecf0f1; /* Màu chữ sáng để dễ đọc */
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Thêm hiệu ứng chuyển màu mượt mà */
+}
+
+.sidebar a:hover {
+    background-color: #3498db; /* Màu nền khi di chuột qua */
+    color: white; /* Màu chữ khi hover */
+}
+
+.sidebar .sidebar-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ecf0f1;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px;
+    background-color: #34495e; /* Màu nền tối cho tiêu đề */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm bóng cho tiêu đề */
+}
+
+/* Sidebar Menu */
+.sidebar-menu li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.sidebar-menu a {
+    padding: 12px 20px;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 1px solid #34495e; /* Đường kẻ phân cách rõ ràng */
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng mượt mà cho hover */
+}
+
+.sidebar-menu a:hover {
+    background-color: #2980b9; /* Màu nền khi hover */
+    color: white; /* Màu chữ khi hover */
+}
+
+
+
+
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 270px;
+    padding: 40px;
+    background-color: #ffffff;
+    min-height: 100vh;
+    transition: margin-left 0.3s;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.card-header {
+    background-color: #34495e;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.table {
+    margin-top: 20px;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 80px;
+}
+
+.table th {
+    background-color: #f5f5f5;
+    color: #2d3e50;
+    font-weight: bold;
+}
+
+.table td {
+    color: #333;
+}
+
+.table td div {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #4e73df;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #2e59d9;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #4e73df;
+    border-color: #4e73df;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #2e59d9;
+    border-color: #2653a4;
+}
+
+.btn-sm {
+    font-size: 14px;
+    padding: 8px 12px;
+}
+/* Styles for the Edit Product Page */
+.main-content {
+    margin-left: 270px;
+    padding: 40px;
+    background-color: #ffffff;
+    min-height: 100vh;
+    transition: margin-left 0.3s;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+select.form-control {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+img.img-preview {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+button[type="submit"]:focus {
+    outline: none;
+}
+
+/* Sidebar and Content Responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+    .main-content {
+        margin-left: 220px;
+    }
+}
